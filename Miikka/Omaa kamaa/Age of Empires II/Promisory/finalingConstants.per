@@ -1,0 +1,98 @@
+#load-if-defined DIFFICULTY-EASIEST
+(defconst consecutive-jumps 64)
+(defconst consecutive-idle-unit-limit 10)
+(defconst enemy-sighted-response-percentage 50)
+(defconst enemy-sighted-response-distance 10)
+(defconst escrowing-percentage 75)
+#end-if
+#load-if-defined DIFFICULTY-EASY
+(defconst consecutive-jumps 32)
+(defconst consecutive-idle-unit-limit 8)
+(defconst enemy-sighted-response-percentage 60)
+(defconst enemy-sighted-response-distance 12)
+(defconst escrowing-percentage 60)
+#end-if
+#load-if-defined DIFFICULTY-MODERATE
+(defconst consecutive-jumps 16)
+(defconst consecutive-idle-unit-limit 6)
+(defconst enemy-sighted-response-percentage 70)
+(defconst enemy-sighted-response-distance 14)
+(defconst escrowing-percentage 45)
+#end-if
+#load-if-defined DIFFICULTY-HARD
+(defconst consecutive-jumps 8)
+(defconst consecutive-idle-unit-limit 4)
+(defconst enemy-sighted-response-percentage 80)
+(defconst enemy-sighted-response-distance 16)
+(defconst escrowing-percentage 30)
+#end-if
+#load-if-defined DIFFICULTY-HARDEST
+(defconst consecutive-jumps 4)
+(defconst consecutive-idle-unit-limit 2)
+(defconst enemy-sighted-response-percentage 90)
+(defconst enemy-sighted-response-distance 18)
+(defconst escrowing-percentage 12)
+#end-if
+#load-if-not-defined DIFFICULTY-EASIEST
+#load-if-not-defined DIFFICULTY-EASY
+#load-if-not-defined DIFFICULTY-MODERATE
+#load-if-not-defined DIFFICULTY-HARD
+#load-if-not-defined DIFFICULTY-HARDEST
+(defconst consecutive-jumps 2)
+(defconst consecutive-idle-unit-limit 0)
+(defconst enemy-sighted-response-percentage 100)
+(defconst enemy-sighted-response-distance 20)
+(defconst escrowing-percentage 0)
+#end-if
+#end-if
+#end-if
+#end-if
+#end-if
+(defconst gl-population-cap 98)
+(defconst temp-goal 99)
+(defconst found-gaia 100)
+(defconst gl-center-x 101)
+(defconst gl-center-y 102)
+(defconst first-time 103)
+(defconst gl-object-x 104)
+(defconst gl-object-y 105)
+(defconst gl-local-total 106)
+(defconst gl-local-last 107)
+(defconst gl-remote-total 108)
+(defconst gl-remote-last 109)
+(defconst temp-goal2 110)
+(defconst temp-goal3 111)
+(defconst gl-object2-x 112)
+(defconst gl-object2-y 113)
+
+(defconst object-data-ownership 83)
+(defconst object-data-capture-flag 84) ; 0 = capture never, 1 = capture once, 2 = capture multiple times, 3 = capture livestock/artifact
+(defconst evil-gaia-unit 1)
+(defconst gl-did-capture 44)
+(defconst gl-did-attack 45)
+(defconst aztec-raider 1570)
+(defconst impassable-tile 1613)
+(defconst workshop 1647)
+(defconst flaming-camel 1263)
+(defconst gl-group-size 66)
+(defconst TERRAIN_DLC2_FORGOTTEN_BLACK 47)
+(defconst TERRAIN_KILLER_FOG 69)
+
+
+#load-if-defined BYZANTINE-CIV
+(defconst siege-ship dromon)
+#else
+#load-if-defined GOTHIC-CIV
+(defconst siege-ship dromon)
+#else
+#load-if-defined HUN-CIV
+(defconst siege-ship dromon)
+#else
+#load-if-defined ROMAN-CIV
+(defconst siege-ship dromon)
+#else
+(defconst siege-ship cannon-galleon-line)
+#end-if
+#end-if
+#end-if
+#end-if

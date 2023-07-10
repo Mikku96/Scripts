@@ -1,0 +1,32 @@
+(defrule
+  (true)
+=>
+  (skybox-set-name-mode 2)
+  (disable-self)
+)
+
+(load "Hardest\defaultConstants")
+(load "Hardest\finalingConstants")
+(load "Hardest\customConstants")
+#load-if-not-defined BATTLE-ROYALE
+(load "Hardest\init")
+(load "Hardest\threats")
+(load "Hardest\escrow")
+(load "Hardest\dawn")
+(load "Hardest\gatherers")
+(load "Hardest\tsa")
+(load "Hardest\general")
+(load "Hardest\orb")
+#load-if-not-defined INFINITE-RESOURCES-START
+(load "Hardest\boarhunting")
+#end-if
+(load "Hardest\researches")
+(load "Hardest\interaction")
+(load "Hardest\buildings")
+(load "Hardest\units")
+(load "Hardest\trade")
+(load "Hardest\resign")
+#else
+(load "Hardest\finaling")
+#end-if
+(load "Hardest\event")

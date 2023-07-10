@@ -1,0 +1,29 @@
+(defrule
+  (true)
+=>
+  (skybox-set-name-mode 2)
+  (disable-self)
+)
+
+(load "Easy\defaultConstants")
+(load "Easy\finalingConstants")
+(load "Easy\customConstants")
+#load-if-not-defined BATTLE-ROYALE
+(load "Easy\init")
+(load "Easy\threats")
+(load "Easy\escrow")
+(load "Easy\dawn")
+(load "Easy\gatherers")
+(load "Easy\tsa")
+(load "Easy\general")
+(load "Easy\orb")
+(load "Easy\researches")
+(load "Easy\interaction")
+(load "Easy\buildings")
+(load "Easy\units")
+(load "Easy\trade")
+(load "Easy\resign")
+#else
+(load "Easy\finaling")
+#end-if
+(load "Easy\event")

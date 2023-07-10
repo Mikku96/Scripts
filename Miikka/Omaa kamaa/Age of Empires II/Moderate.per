@@ -1,0 +1,29 @@
+(defrule
+  (true)
+=>
+  (skybox-set-name-mode 2)
+  (disable-self)
+)
+
+(load "Moderate\defaultConstants")
+(load "Moderate\finalingConstants")
+(load "Moderate\customConstants")
+#load-if-not-defined BATTLE-ROYALE
+(load "Moderate\init")
+(load "Moderate\threats")
+(load "Moderate\escrow")
+(load "Moderate\dawn")
+(load "Moderate\gatherers")
+(load "Moderate\tsa")
+(load "Moderate\general")
+(load "Moderate\orb")
+(load "Moderate\researches")
+(load "Moderate\interaction")
+(load "Moderate\buildings")
+(load "Moderate\units")
+(load "Moderate\trade")
+(load "Moderate\resign")
+#else
+(load "Moderate\finaling")
+#end-if
+(load "Moderate\event")

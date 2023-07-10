@@ -1,0 +1,32 @@
+(defrule
+  (true)
+=>
+  (skybox-set-name-mode 2)
+  (disable-self)
+)
+
+(load "Extreme\defaultConstants")
+(load "Extreme\finalingConstants")
+(load "Extreme\customConstants")
+#load-if-not-defined BATTLE-ROYALE
+(load "Extreme\init")
+(load "Extreme\threats")
+(load "Extreme\escrow")
+(load "Extreme\dawn")
+(load "Extreme\gatherers")
+(load "Extreme\tsa")
+(load "Extreme\general")
+(load "Extreme\orb")
+#load-if-not-defined INFINITE-RESOURCES-START
+(load "Extreme\boarhunting")
+#end-if
+(load "Extreme\researches")
+(load "Extreme\interaction")
+(load "Extreme\buildings")
+(load "Extreme\units")
+(load "Extreme\trade")
+(load "Extreme\resign")
+#else
+(load "Extreme\finaling")
+#end-if
+(load "Extreme\event")
