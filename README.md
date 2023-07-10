@@ -1,4 +1,15 @@
-# Projektit (Projects)
+# Projektit 
+---
+## Kansio sisältää:
+* Opintojen aikana tuotettuja scriptejä
+* Osa liittyy tähtitieteeseen -- Gradua varten tehtyjä
+* Toiset (AoE II scripti) tehty puuduttavan säätämisen kiertämiseksi
+
+Kaikissa scripteissä ei ole mitenkään kovin hyvät kommentit/ohjeet -- omaan käyttöön kaikki kuitenkin.
+
+
+# (English) Projects
+---
 ## This repository contains:
 * Scripts created during my time in University of Oulu.
 * Some of which are related to astronomy -- such as my Master's thesis scripts.
